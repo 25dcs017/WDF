@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CHARUSAT Clubs</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightgray;
+            margin: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: darkblue;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        nav a:hover {
+            background-color: orange;
+        }
+
+        /* Heading */
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        /* Club Cards */
+        .clubs {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            height: 350px;
+
+            border: 2px solid black;
+            border-radius: 10px;
+
+            padding: 15px;
+            margin: 10px;
+
+            text-align: center;
+        }
+
+        .card:hover {
+            background-color: lightyellow;
+        }
+
+        .card img {
+            width: 220px;
+            height: 140px;
+            border-radius: 8px;
+        }
+
+        .button {
+            background-color: darkblue;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: orange;
+            color: black;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 140px;
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        .gallery img:hover {
+            width: 210px;
+            height: 150px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>CHARUSAT</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#clubs">Clubs</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <section id="home">
+        <h2>College Club Showcase</h2>
+
+        <p style="text-align:center;">
+            Welcome to CHARUSAT College Club Activities
+        </p>
+    </section>
+
+
+    <!-- Clubs -->
+    <section id="clubs">
+
+        <h2>Our Clubs</h2>
+
+        <div class="clubs">
+
+            <!-- Technical Club -->
+            <div class="card">
+
+                <img src="technical.jpg" alt="Technical Club">
+
+                <h3>Technical Club</h3>
+
+                <p>
+                    Technical Club helps students learn new
+                    technologies and develop technical skills.
+                </p>
+
+                <a href="#" class="button">View Details</a>
+
+            </div>
+
+
+            <!-- Coding Club -->
+            <div class="card">
+
+                <img src="coding.jpg" alt="Coding Club">
+
+                <h3>Coding Club</h3>
+
+                <p>
+                    Coding Club helps students improve their
+                    programming and problem solving skills.
+                </p>
+
+                <a href="#" class="button">View Details</a>
+
+            </div>
+
+
+            <!-- Robotics Club -->
+            <div class="card">
+
+                <img src="robotics.jpg" alt="Robotics Club">
+
+                <h3>Robotics Club</h3>
+
+                <p>
+                    Robotics Club allows students to learn about
+                    robots, electronics and automation.
+                </p>
+
+                <a href="#" class="button">View Details</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Gallery -->
+    <section id="gallery">
+
+        <h2>Club Gallery</h2>
+
+        <div class="gallery">
+
+            <img src="activity1.jpg" alt="Activity 1">
+
+            <img src="activity2.jpg" alt="Activity 2">
+
+            <img src="activity3.jpg" alt="Activity 3">
+
+            <img src="activity4.jpg" alt="Activity 4">
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <p>CHARUSAT, Anand</p>
+
+        <p>College Club Activities - 2026</p>
+
+    </footer>
+
+</body>
+
+</html>
