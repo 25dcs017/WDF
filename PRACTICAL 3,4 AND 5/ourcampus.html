@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Campus</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f4c81, #1e88e5);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 85%;
+            margin: 40px auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h2 {
+            color: #1565c0;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        ul {
+            margin-left: 20px;
+            color: #555;
+            line-height: 2;
+        }
+
+        .back {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back a {
+            text-decoration: none;
+            background: #1565c0;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .back a:hover {
+            background: #0f4c81;
+        }
+
+        footer {
+            background: #1565c0;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Our Campus</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+            <h2> 🏫 About Our Campus</h2>
+            <p>
+                Our campus provides a modern learning environment with smart classrooms,
+                advanced laboratories, a digital library, sports facilities, and green surroundings.
+                We focus on academic excellence, innovation, and overall student development.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>🏢 Campus Facilities</h2>
+
+            <ul>
+                <li>Smart Classrooms</li>
+                <li>Computer Laboratories</li>
+                <li>Central Library</li>
+                <li>Wi-Fi Campus</li>
+                <li>Sports Ground</li>
+                <li>Hostel Facilities</li>
+                <li>Cafeteria</li>
+                <li>Medical Center</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2> 📍 Campus Address</h2>
+
+            <p>
+                CHARUSAT University<br>
+                Changa, Anand<br>
+                Gujarat - 388421<br>
+                India
+            </p>
+        </div>
+
+        <div class="card">
+            <h2> Contact Information</h2>
+
+            <p>
+                <strong>Email:</strong> info@studentportal.com<br><br>
+                <strong>Phone:</strong> +91 9876543210
+            </p>
+        </div>
+
+        <div class="back">
+            <a href="dashboard.html">⬅️ Back to Dashboard</a>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 Student Portal | All Rights Reserved
+    </footer>
+    
+    <script>
+
+        function toggleTheme() {
+
+            document.body.classList.toggle("dark");
+
+            let button = document.getElementById("themeButton");
+
+            if (document.body.classList.contains("dark")) {
+
+                button.innerHTML = "☀️ Light";
+
+            } else {
+
+                button.innerHTML = "🌙 Dark";
+
+            }
+        }
+
+        let slideIndex = 0;
+
+        let slides = document.getElementsByClassName("slide");
+
+        let dots = document.getElementsByClassName("dot");
+
+
+        function showSlide(index) {
+
+            if (index >= slides.length) {
+                slideIndex = 0;
+            }
+
+            if (index < 0) {
+                slideIndex = slides.length - 1;
+            }
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+                dots[i].classList.remove("active");
+            }
+
+            slides[slideIndex].classList.add("active");
+            dots[slideIndex].classList.add("active");
+        }
+
+        function changeSlide(direction) {
+
+            slideIndex = slideIndex + direction;
+
+            showSlide(slideIndex);
+
+        }
+
+        function currentSlide(index) {
+
+            slideIndex = index;
+
+            showSlide(slideIndex);
+
+        }
+
+        setInterval(function () {
+
+            slideIndex++;
+
+            showSlide(slideIndex);
+
+        }, 3000);
+
+    </script>
+
+
+
+</body>
+
+</html>
